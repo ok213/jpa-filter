@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "ce832770-f5cc-4a26-bff5-2a6d17e1ddf9",
+		"name": "jpa-filter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/my/persons?search=firstName:Jo*,dob>19750101",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=firstName:Jo*,dob>19750101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "firstName:Jo*,dob>19750101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=city:Moscow&sort=lastName,asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=city:Moscow&sort=lastName,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "city:Moscow"
+						},
+						{
+							"key": "sort",
+							"value": "lastName,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=lastName:F*&sort=age,asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=lastName:F*&sort=age,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "lastName:F*"
+						},
+						{
+							"key": "sort",
+							"value": "age,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=&sort=id,desc ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=&sort=id,desc ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": ""
+						},
+						{
+							"key": "sort",
+							"value": "id,desc "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=city:Piter,building:2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=city:Piter,building:2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "city:Piter,building:2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=city:Piter&sort=dob,desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=city:Piter&sort=dob,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "city:Piter"
+						},
+						{
+							"key": "sort",
+							"value": "dob,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=street:Ma*&sort=age,desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=street:Ma*&sort=age,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "street:Ma*"
+						},
+						{
+							"key": "sort",
+							"value": "age,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=dob>19850101&sort=age,desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=dob>19850101&sort=age,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "dob>19850101"
+						},
+						{
+							"key": "sort",
+							"value": "age,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/my/persons?search=firstName:Jo*",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/my/persons?search=firstName:Jo*",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"my",
+						"persons"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "firstName:Jo*"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
